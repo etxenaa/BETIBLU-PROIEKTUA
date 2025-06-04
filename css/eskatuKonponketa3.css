@@ -1,0 +1,262 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--Neutral-neutral-100, #20242D);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 48px 0px;
+    justify-self: center;
+    gap: 24px;
+    margin-top: 24px;
+    width: 545px;
+    height: 734px;
+
+    background: #0E131B;
+
+}
+
+section .titulua {
+    width: 400px;
+    height: 76px;
+}
+
+section .titulua h1 {
+    width: 224px;
+    height: 76px;
+
+    font-family: 'EB Garamond';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 76px;
+    line-height: 76px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.02em;
+
+    color: #9AA1B1;
+}
+
+section .textua {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 19px;
+
+    width: 545px;
+    height: 42px;
+}
+
+section .textua p {
+    width: 398px;
+    height: 42px;
+
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #F3F6FD;
+}
+
+section .ilustrazioa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 9.6px;
+    gap: 3.2px;
+
+    width: 400px;
+    height: 400px;
+}
+
+section .ilustrazioa .ilustrazioa2 {
+    width: 380.8px;
+    height: 298.8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section .ilustrazioa img {
+    height: 231.22px;
+    left: 7.98%;
+    right: 7.98%;
+    top: calc(50% - 231.22px/2 + 231.07px);
+
+}
+
+section .botoia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+
+    width: 400px;
+    height: 48px;
+
+}
+
+section .botoia button {
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 12px;
+    gap: 8px;
+
+    width: 187px;
+    height: 48px;
+    background: #FFFFFF;
+    border: #FFFFFF;
+}
+
+section .botoia button p {
+    width: 58px;
+    height: 24px;
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #6E7584;
+}
+
+
+section .botoia button {
+    background: var(--Betiblu-Primary, #84FCF3);
+
+
+    border: var(--Betiblu-Primary, #84FCF3);
+    font-family: IBM Plex Mono;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0%;
+    color: var(--Neutral-neutral-100, #02050E);
+
+}
+
+section .botoia button:hover {
+    background: var(--Betiblu-Primary-80, #248B83);
+    border: var(--Betiblu-Primary-80, #248B83);
+
+}
+
+section .botoia button:hover p {
+    color: white;
+}
+
+@media (max-width: 700px) {
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 24px 16px;
+        gap: 24px;
+
+        position: absolute;
+        width: 362px;
+        height: 640px;
+        left: 1.5%;
+        top: 20%;
+
+        background: #0E131B;
+
+    }
+
+    section .titulua {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 8px;
+
+        width: 330px;
+        height: 76px;
+    }
+
+    section .textua {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        gap: 19px;
+
+        width: 330px;
+        height: 63px;
+    }
+
+    section .textua p {
+        width: 330px;
+        height: 63px;
+
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 21px;
+        color: #F3F6FD;
+    }
+
+    section .ilustrazioa {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 7.992px;
+        gap: 2.66px;
+
+        width: 333px;
+        height: 333px;
+    }
+
+    section .ilustrazioa .ilustrazioa2 {
+        width: 317.02px;
+        height: 248.75px;
+    }
+
+    section .ilustrazioa .ilustrazioa2 img {
+        height: 192.49px;
+        left: 7.98%;
+        right: 7.98%;
+        top: calc(50% - 192.49px/2 + 192.36px);
+
+    }
+
+    section .botoia {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 8px;
+
+
+        width: 400px;
+        height: 48px;
+    }
+}

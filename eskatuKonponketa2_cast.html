@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konpondu 2/2</title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/eskatuKonponketa2.css">
+    <link rel="stylesheet" href="css/cookie.css">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700&family=Rubik:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <script src="js/navbar.js"></script>
+    <section class="formularioaKonponketa" id="sekzioa">
+        <div class="titulua">
+            <div class="titulua2">
+                <h1>Datos personales</h1>
+                <h1>2/2</h1>
+            </div>
+        </div>
+        <form action="/submit" method="get" enctype="multipart/form-data" onsubmit="mostrarAlerta2(event)">
+            <div class="galderak" id="galderak">
+                <label id="helbideaLabel" for="helbidea">Dirección</label>
+                <input id="helbidea" class="helbidea" type="text" placeholder="Dirección"
+                    onfocus="mostrarLabel('helbideaLabel')" onblur="ocultarLabel('helbideaLabel')">
+                <label id="herriaLabel" for="herria">Ciudad</label>
+                <input id="herria" class="herria" type="text" placeholder="Ciudad" onfocus="mostrarLabel('herriaLabel')"
+                    onblur="ocultarLabel('herriaLabel')">
+                <div class="posta-emaila" id="posta-emaila">
+                    <div class="posta">
+                        <label id="postaKodeaLabel" for="postaKodea">Código postal</label>
+                        <input id="postaKodea" class="postaKodea" type="number" placeholder="Código postal"
+                            onfocus="mostrarLabel('postaKodeaLabel')" onblur="ocultarLabel('postaKodeaLabel')">
+                    </div>
+
+                    <div class="emaila">
+                        <label id="emailaLabel" for="emaila">Email</label>
+                        <input id="emaila" class="emaila" type="email" placeholder="Email"
+                            onfocus="mostrarLabel('emailaLabel')" onblur="ocultarLabel('emailaLabel')">
+                        <label class="emailErrorea" for="emaila" style="color: red; display: none;">Escribe un correo electrónico correcto</label>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="botoia">
+                <button id="atzera" type="button">
+                    <p>Volver</p>
+                </button>
+                <button id="bukatu" type="submit">
+                    <p>Finalizar</p>
+                </button>
+            </div>
+        </form>
+    </section>
+
+    <script src="js/index.js"></script>
+    <script src="js/eskatuKonponketa2.js"></script>
+    <script src="js/cookie.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        emailjs.init('YYmHoOv79XWFQF7GT');  
+    </script>
+</body>
+
+</html>

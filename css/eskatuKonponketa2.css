@@ -1,0 +1,456 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--Neutral-neutral-100, #20242D);
+    color: white;
+}
+
+.formularioaKonponketa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 48px;
+    gap: 16px;
+
+    position: absolute;
+    width: 830px;
+    height: 395px;
+    left: 118px;
+    top: 162px;
+
+    background: #0E131B;
+
+}
+
+.formularioaKonponketa .titulua {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+
+    width: 528px;
+    height: 56px;
+
+}
+
+.formularioaKonponketa .titulua .titulua2 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+
+    width: 428px;
+    height: 56px;
+
+}
+
+.formularioaKonponketa .titulua .titulua2 h1:nth-child(1) {
+
+    width: 335px;
+    height: 56px;
+
+    font-family: 'EB Garamond';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.02em;
+
+    color: #9AA1B1;
+
+}
+
+.formularioaKonponketa .titulua .titulua2 h1:nth-child(2) {
+    width: 69px;
+    height: 56px;
+
+    font-family: 'EB Garamond';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.02em;
+
+    color: #9AA1B1;
+}
+
+.formularioaKonponketa form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+
+    width: 528px;
+    height: 219px;
+
+}
+
+.formularioaKonponketa form .galderak {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+
+    width: 528px;
+    height: 152px;
+}
+
+.formularioaKonponketa form .galderak .helbidea {
+
+    background: #6E7584;
+    border: 1px solid #6E7584;
+    border-radius: 0px;
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #F3F6FD;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 16px;
+    gap: 10px;
+    width: 528px;
+    height: 40px;
+}
+
+
+
+.formularioaKonponketa form .galderak .herria {
+
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 16px;
+    gap: 10px;
+
+    width: 528px;
+    height: 40px;
+
+    background: #6E7584;
+    border: 1px solid #6E7584;
+    border-radius: 0px;
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #F3F6FD;
+}
+
+.formularioaKonponketa form .galderak .postaKodea {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 16px;
+    gap: 10px;
+
+    width: 168px;
+    height: 40px;
+
+    background: #6E7584;
+    border: 1px solid #6E7584;
+    border-radius: 0px;
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #F3F6FD;
+
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.formularioaKonponketa #helbideaLabel,
+.formularioaKonponketa #herriaLabel {
+    display: none;
+    font-family: Rubik;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    width: 34px;
+    height: 10px;
+    color: var(--Neutral-neutral-10, #F3F6FD);
+}
+
+.formularioaKonponketa #postaKodeaLabel,
+.formularioaKonponketa #emailaLabel {
+    display: none;
+    width: 74px;
+    height: 28px;
+    padding: 2px;
+    gap: 8px;
+    font-family: Rubik;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+
+}
+
+.formularioaKonponketa .emailErrorea {
+    margin-top: 2px;
+}
+
+.formularioaKonponketa .posta-emaila {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.formularioaKonponketa .posta-emaila .posta,
+.formularioaKonponketa .posta-emaila .emaila {
+    display: flex;
+    flex-direction: column;
+}
+
+.formularioaKonponketa .posta-emaila .emaila .emaila {
+    width: 100%;
+}
+
+.formularioaKonponketa form .galderak .emaila .emaila {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 16px;
+    gap: 10px;
+
+    width: 344px;
+    height: 40px;
+
+    background: #6E7584;
+    border: 1px solid #6E7584;
+    border-radius: 0px;
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #F3F6FD;
+
+}
+
+.formularioaKonponketa form .galderak .helbidea::placeholder,
+.formularioaKonponketa form .galderak .herria::placeholder,
+.formularioaKonponketa form .galderak .postaKodea::placeholder,
+.formularioaKonponketa form .galderak .emaila::placeholder {
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-size: 16px;
+
+    color: #ffffff;
+}
+
+.formularioaKonponketa form .botoia {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 19px;
+
+    width: 528px;
+    height: 48px;
+}
+
+.formularioaKonponketa form .botoia button:nth-child(1) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 12px;
+    gap: 8px;
+
+    width: 254.5px;
+    height: 48px;
+
+    background: #2B303A;
+    border: #2B303A;
+}
+
+.formularioaKonponketa form .botoia button:nth-child(2) {
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 12px;
+    gap: 8px;
+
+    width: 254.5px;
+    height: 48px;
+
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+
+}
+
+.formularioaKonponketa form .botoia button:nth-child(1) p {
+    width: 58px;
+    height: 24px;
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.formularioaKonponketa form .botoia button:nth-child(2) p {
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #6E7584;
+}
+
+.formularioaKonponketa form .botoia button:nth-child(1):hover {
+    background: var(--Neutral-neutral-100, #02050E);
+    border: var(--Neutral-neutral-100, #02050E);
+}
+
+.formularioaKonponketa form .botoia button:nth-child(1):active {
+    background: var(--Neutral-neutral-70, #6E7584);
+    border: var(--Neutral-neutral-70, #6E7584);
+}
+
+
+
+.formularioaKonponketa form .botoia button:nth-child(2):hover {
+    background: var(--Betiblu-Primary-80, #248B83);
+    border: var(--Betiblu-Primary-80, #248B83);
+
+}
+
+.formularioaKonponketa form .botoia button:nth-child(2):hover p {
+
+    color: white;
+}
+
+.formularioaKonponketa form input:focus {
+    border: 2px solid var(--Betiblu-Primary-80, #248B83);
+    outline: none;
+}
+
+@media (max-width: 1075px) {
+    .formularioaKonponketa {
+        width: 720px;
+        height: 395px;
+        left: 24px;
+        gap: 24px;
+        padding: 48px;
+
+    }
+}
+
+@media(max-width: 750px) {
+    .formularioaKonponketa {
+        position: absolute;
+        width: 362px;
+        height: 327px;
+        left: 10px;
+        top: 179px;
+    }
+
+    .formularioaKonponketa .titulua {
+        width: 330px;
+        height: 36px;
+        gap: 24px;
+
+    }
+
+    .formularioaKonponketa .titulua .titulua2 h1:nth-child(1) {
+        width: 223px;
+        height: 36px;
+        font-family: EB Garamond;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 36px;
+        letter-spacing: -2%;
+
+    }
+
+    .formularioaKonponketa .titulua .titulua2 h1:nth-child(2) {
+        width: 46px;
+        height: 36px;
+
+        font-family: 'EB Garamond';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 36px;
+    }
+
+    .formularioaKonponketa form {
+        width: 330px;
+        height: 219px;
+    }
+
+    .formularioaKonponketa form .galderak {
+        width: 330px;
+        height: 152px;
+    }
+
+    .formularioaKonponketa form .galderak .helbidea,
+    .formularioaKonponketa form .galderak .herria {
+        width: 330px;
+
+    }
+
+    .formularioaKonponketa form .galderak .postaKodea {
+        width: 168px;
+
+    }
+
+    .formularioaKonponketa form .galderak .emaila {
+        width: 146px;
+    }
+
+    .formularioaKonponketa form .galderak .emaila input {
+        max-width: 100%;
+    }
+
+    .formularioaKonponketa form .botoia {
+        width: 330px;
+        height: 48px;
+        gap: 19px;
+
+    }
+}

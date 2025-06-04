@@ -1,0 +1,88 @@
+.ohikoGalderak {
+    display: flex;
+    justify-content: center;
+    padding-top: 96px;
+    margin-bottom: 96px;
+    overflow: visible;
+}
+
+
+.ohikoGalderak .container {
+    flex-direction: column;
+    width: 66.66%;
+    max-height: 626px;
+}
+
+.ohikoGalderak .container h2 {
+    color: var(--Neutral-neutral-70, #6E7584);
+    font-family: "EB Garamond";
+    font-size: 75px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 48px;
+}
+
+.accordion-item {
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    color: var(--Neutral-neutral-10, #F3F6FD);
+    font-family: Rubik;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    cursor: pointer;
+}
+
+.accordion-item .info {
+    display: none;
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+.gezia-gora {
+    display: none;
+}
+
+.gezia-behera {
+    display: block;
+}
+
+@media (max-width: 1440px) {
+    .ohikoGalderak .container {
+        width: 90%;
+    }
+}
+
+
+@media(max-width:553px) {
+    .ohikoGalderak .container h2 {
+        font-family: EB Garamond;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 52.2px;
+        letter-spacing: 0%;
+
+    }
+}
+
+@media (max-width: 670px) {
+
+    .ohikoGalderak .gezia p {
+        font-family: Rubik;
+        font-weight: 500;
+        font-size: 15.07px;
+        line-height: 17.22px;
+        letter-spacing: 0%;
+
+    }
+
+    .ohikoGalderak .info {
+        font-size: 13.07px;
+    }
+}

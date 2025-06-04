@@ -1,0 +1,315 @@
+.cookiea {
+    width: 352px;
+    height: 575px;
+    gap: 24px;
+    padding: 24px;
+    background: var(--Neutral-neutral-75, #2B303A);
+
+    display: flex;
+    flex-direction: column;
+
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.cookiea header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+
+    width: 304px;
+    height: 72px;
+    background: var(--Neutral-neutral-75, #2B303A);
+
+}
+
+.cookiea header p {
+    width: 250px;
+    height: 72px;
+
+    font-family: 'EB Garamond';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 36px;
+    color: #FFFFFF;
+}
+
+.cookiea header .irten {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+
+    width: 24px;
+    height: 72px;
+}
+
+.cookiea header .irten svg {
+    width: 24px;
+    height: 24px;
+}
+
+.cookiea .textua1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+
+    width: 34px;
+    height: 110px;
+}
+
+.cookiea .textua1 .titulua {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+
+    white-space: nowrap;
+
+    width: 324px;
+    height: 18px;
+}
+
+.cookiea .textua1 .titulua p {
+    width: 158px;
+    height: 18px;
+
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+
+    color: #FFFFFF;
+}
+
+.cookiea .textua1 .edukia {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+
+    width: 304px;
+    height: 84px;
+}
+
+.cookiea .textua1 .edukia p {
+    width: 304px;
+    height: 84px;
+
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+
+    color: #FFFFFF;
+}
+
+.cookiea .textua2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+
+    width: 304px;
+    height: 89px;
+}
+
+.cookiea .textua2 .titulua {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+
+    width: 304px;
+    height: 18px;
+}
+
+.cookiea .textua2 .titulua p {
+    width: 296px;
+    height: 18px;
+
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+
+    color: #FFFFFF;
+}
+
+.cookiea .textua2 .edukia {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+
+    width: 304px;
+    height: 63px;
+
+}
+
+.cookiea .textua2 .edukia p {
+    width: 304px;
+    height: 63px;
+
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.cookiea .textua3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+
+    width: 304px;
+    height: 110px;
+
+}
+
+.cookiea .textua3 .titulua {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+
+    width: 304px;
+    height: 18px;
+}
+
+.cookiea .textua3 .titulua p {
+    width: 174px;
+    height: 18px;
+
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+
+    color: #FFFFFF;
+}
+
+.cookiea .textua3 .edukia {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+
+    width: 304px;
+    height: 84px;
+}
+
+.cookiea .textua3 .edukia p {
+    width: 304px;
+    height: 84px;
+
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+
+    color: #FFFFFF;
+}
+
+.cookiea .botoiak {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+
+    width: 304px;
+    height: 50px;
+}
+
+.cookiea .botoiak button:nth-child(1) {
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 24px;
+    gap: 8px;
+
+    width: 144px;
+    height: 50px;
+
+    background: #FFFFFF;
+    border: 1px solid #C9D0DE;
+}
+
+.cookiea .botoiak button:nth-child(1) p {
+    width: 66px;
+    height: 22px;
+
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+
+    color: #595F6D;
+}
+
+.cookiea .botoiak button:nth-child(2) {
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 24px;
+    gap: 8px;
+
+    width: 144px;
+    height: 50px;
+
+    background: #FFFFFF;
+    border: 1px solid #C9D0DE;
+}
+
+.cookiea .botoiak button:nth-child(2) p {
+    width: 52px;
+    height: 24px;
+
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #02050E;
+}

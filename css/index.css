@@ -1,0 +1,760 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--Neutral-neutral-100, #02050E);
+    color: white;
+    /* overflow: hidden; */
+}
+
+
+
+.hero {
+    width: 100%;
+    height: 1036px;
+    display: flex;
+    color: white;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.33) 0%, rgba(0, 0, 0, 0.44) 100%), url('../img/fondoHasiera.jpg') lightgray 50% / cover no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-text {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 677px;
+    margin-top: 92px;
+    margin-right: 418px;
+    margin-left: 145px;
+}
+
+.hero-text div {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-text .hero-text2 {
+    color: var(--Neutral-neutral-0, #FFF);
+    font-family: "EB Garamond";
+    font-size: clamp(60px, 6.8vw, 333px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 133.333px;
+    letter-spacing: -2.667px;
+}
+
+.hero-text p {
+    width: 777px;
+
+    color: var(--Neutral-neutral-0, #FFF);
+    font-family: Rubik;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: 0%;
+
+    margin-top: 32px;
+}
+
+.hero-text .eta {
+    display: inline;
+    color: var(--Neutral-neutral-0, #FFF);
+    font-family: "EB Garamond";
+    font-size: clamp(24px, 7vw, 333px);
+    font-style: normal;
+    line-height: 133.333px;
+    /* 100% */
+    letter-spacing: -2.667px;
+    font-weight: 400;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--2, 16px);
+    margin-top: 64px;
+
+    padding: 24px;
+
+    position: absolute;
+    width: 233px;
+    height: 82px;
+
+    background: #FFFFFF;
+    border: 1px solid #C9D0DE;
+}
+
+.btn a {
+    text-decoration: none;
+
+    width: 185px;
+    height: 34px;
+
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 140%;
+
+    color: var(--neutral-neutral-80, #595F6D);
+
+}
+
+.btn a:hover {
+    color: var(--Betiblu-Primary-80, #248B83);
+
+}
+
+.btn a:active {
+    color: var(--Betiblu-Primary-100, #0C4743);
+
+}
+
+
+.how-it-works {
+    display: flex;
+    flex-direction: column;
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
+.how-it-works h2 {
+    color: var(--Neutral-neutral-50, #9AA1B1);
+    text-align: center;
+    font-family: "EB Garamond";
+    font-size: 76px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 76px;
+    letter-spacing: -1.52px;
+    padding-bottom: 48px;
+}
+
+.how-it-works .steps {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+
+
+.how-it-works .blog-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1 0 0;
+}
+
+.how-it-works .ikonoak {
+    display: flex;
+    width: 400px;
+    height: 400px;
+    padding: 64.4px 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3.2px;
+    order: -1;
+}
+
+.how-it-works .content {
+    gap: 10px;
+    padding: 24px;
+}
+
+.how-it-works .content h3 {
+    color: var(--Neutral-neutral-0, #FFF);
+    font-family: Rubik;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    height: 78px;
+}
+
+.how-it-works .ikonoak2 {
+    display: flex;
+    width: 400px;
+    height: 400px;
+    padding: 9px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3.2px;
+    order: -1;
+}
+
+.how-it-works .content2 {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    align-self: stretch;
+}
+
+.how-it-works .content3 h3 {
+    margin-bottom: 10px;
+}
+
+.how-it-works .content3 p {
+    margin-top: 10px;
+    margin-bottom: auto;
+}
+
+.ikonoak3 {
+    display: flex;
+    width: 408.291px;
+    height: 418px;
+    padding: 88.625px 38.104px 58.256px 30.323px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    flex-shrink: 0;
+    aspect-ratio: 408.29/418.00;
+}
+
+.how-it-works .content3 {
+    display: flex;
+    height: 210px;
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+
+
+.how-it-works .card {
+    display: flex;
+    width: 400px;
+    align-items: center;
+    gap: 32px;
+    align-self: stretch;
+    background: var(--Neutral-neutral-80, #20242D);
+    width: 400px;
+    height: 647px;
+}
+
+/* .how-it-works .card:hover{
+    background: var(--Neutral-neutral-80, #1a1d24);
+    scale: 1.01;   
+    transition-duration: 0.5s;
+} */
+
+
+.how-it-works h3 {
+    color: var(--Neutral-neutral-0, #FFF);
+    font-family: Rubik;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    margin-bottom: 10px;
+}
+
+
+.how-it-works p {
+    color: var(--Neutral-neutral-10, #F3F6FD);
+    font-family: Rubik;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 30px */
+}
+
+.lurraIsGaia {
+    display: flex;
+    padding: var(--12xBase, 96px) 48px;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--6xBase, 48px);
+    align-self: stretch;
+}
+
+.lurraIsGaia .argazkia {
+    height: 646px;
+    width: 100%;
+}
+
+.lurraIsGaia h3 {
+    color: var(--Neutral-neutral-50, #9AA1B1);
+    font-family: "EB Garamond";
+    font-size: clamp(24px, 18vw, 333px);
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    /* 120.12% */
+    align-self: center;
+    white-space: nowrap;
+}
+
+.lurraIsGaia .container {
+    display: flex;
+    align-self: end;
+    flex-direction: column;
+    width: 774px;
+    gap: 48px;
+}
+
+
+
+.lurraIsGaia .container .container-text {
+    color: var(--Neutral-neutral-10, #F3F6FD);
+    font-family: Rubik;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    /* 142.857% */
+    width: 100%;
+}
+
+.lurraIsGaia button {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 24px;
+    gap: 8px;
+
+    width: 484px;
+    height: 56px;
+    left: 395px;
+    top: 227px;
+
+    background: #FFFFFF;
+    border: 1px solid #20242D;
+
+    font-family: Rubik;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0%;
+
+}
+
+.lurraIsGaia button:hover {
+    background: var(--Neutral-neutral-15, #EAEFFA);
+
+}
+
+.lurraIsGaia button:active {
+    background: var(--Neutral-neutral-30, #C9D0DE);
+
+}
+
+.lurraIsGaia button svg {
+    width: 24px;
+    height: 24px;
+
+
+}
+
+@media (max-width: 1440px) {
+    .hero-text {
+        margin-bottom: 332px;
+        margin-top: 184px;
+        margin-right: 354.52;
+        margin-left: 77px;
+    }
+
+    .hero-text h1 {
+        font-size: 100px;
+    }
+}
+
+@media (max-width: 1277px) {
+    .hero-text .hero-text2 {
+        line-height: 30px;
+    }
+}
+
+@media (max-width: 1237px) {
+    .lurraIsGaia .argazkia {
+        height: 500px;
+    }
+}
+
+@media (max-width: 950px) {
+    .lurraIsGaia .container .container-text {
+        width: 441px;
+        font-family: Rubik;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 21.33px;
+        letter-spacing: 0%;
+    }
+
+    /* .lurraIsGaia .container-datuak {
+        align-items: end;
+    } */
+
+    .lurraIsGaia .container button {
+        width: 400px;
+        height: 52px;
+        top: 307px;
+        left: 395px;
+        justify-content: space-between;
+        border-width: 1px;
+        padding-top: 3․5px;
+        padding-right: 6px;
+        padding-bottom: 3․5px;
+        padding-left: 6px;
+        font-family: Rubik;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0%;
+
+    }
+
+    .lurraIsGaia .container {
+        width: 400px;
+    }
+
+    .lurraIsGaia .container button svg {
+        width: 20.80000114440918px;
+        height: 20.80000114440918px;
+
+    }
+
+    .hero-text p {
+        width: 617px;
+
+        font-family: Rubik;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0%;
+
+    }
+}
+
+@media(max-width: 768px) {
+    .hero {
+        height: 562.0775756835938px;
+        top: 70px;
+        left: -29px;
+    }
+
+    .hero .hero-text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+
+        width: 720px;
+        height: 360.87px;
+        left: 41px;
+        margin-top: 159px;
+    }
+
+    .hero .hero-text p {
+        margin-top: 50px;
+    }
+
+    .hero-text .hero-text2 {
+        width: 657px;
+        margin-top: -100px;
+        line-height: 1px;
+        font-size: 68px;
+    }
+
+    .btn {
+        margin-top: 174px;
+        width: 195px;
+        height: 56px;
+    }
+
+    .btn a {
+        font-family: Rubik;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 28px;
+        letter-spacing: 0%;
+        margin-top: 5px;
+    }
+
+
+
+    .lurraIsGaia .argazkia {
+        height: 350px;
+    }
+
+    .how-it-works h2 {
+        font-size: 40px;
+    }
+
+
+}
+
+@media(max-width: 670px) {
+    .hero-text .hero-text2 {
+        width: 400px;
+        font-size: 48px;
+    }
+
+
+    .hero-text .btn {
+        margin-top: 244px;
+    }
+
+
+    .hero-text p {
+        width: 355px;
+
+        font-family: Rubik;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0%;
+
+    }
+}
+
+
+@media(max-width:510px) {
+
+
+    .hero-text {
+        margin-left: 34px;
+    }
+
+    .lurraIsGaia .container .container-text {
+        font-family: Rubik;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 21.33px;
+        letter-spacing: 0%;
+
+    }
+
+    .lurraIsGaia .container {
+        align-items: start;
+
+        width: 100%;
+    }
+
+    .lurraIsGaia .container button {
+        width: 350px;
+        font-family: Rubik;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 19px;
+        letter-spacing: 0%;
+
+    }
+
+    .lurraIsGaia .container .container-text {
+        width: 250px;
+    }
+
+
+
+    .how-it-works .steps {
+        gap: 8px;
+    }
+
+    .how-it-works .card:nth-child(1) {
+        width: 90%;
+        height: 250.6px;
+    }
+
+    .how-it-works .card:nth-child(2) {
+        width: 90%;
+        height: 260.47px;
+    }
+
+    .how-it-works .card:nth-child(3) {
+
+        width: 90%;
+        height: 280px;
+
+    }
+
+    .how-it-works .ikonoak {
+        width: 361px;
+        height: 143px;
+        gap: 1.71px;
+        padding-top: 34.35px;
+        padding-right: 10.67px;
+        padding-bottom: 34.35px;
+        padding-left: 10.67px;
+
+    }
+
+    .how-it-works .card-body h3 {
+        font-size: 16px;
+        line-height: 20.8px;
+        letter-spacing: 0%;
+        width: 223px;
+        height: 21px;
+    }
+
+    .how-it-works .card-body p {
+        font-weight: 400;
+        font-size: 10.67px;
+        line-height: 16px;
+    }
+
+
+    .how-it-works .ikonoak2 {
+        width: 361px;
+        height: 143px;
+        gap: 1.71px;
+
+    }
+
+    .how-it-works .ikonoak3 {
+        width: 361px;
+        height: 143px;
+        gap: 1.71px;
+        padding-top: 18px;
+        padding-right: 5.12px;
+        padding-bottom: 18.77px;
+        padding-left: 5.12px;
+
+    }
+
+    .how-it-works .ikonoak img {
+        width: 154.1637420654297px;
+        height: 93.75187683105469px;
+        top: 152.4px;
+        left: 27.26px;
+
+    }
+
+    .how-it-works .ikonoak2 img {
+        width: 110px;
+        height: 113px;
+        top: -13px;
+
+    }
+
+    .how-it-works .ikonoak3 img {
+        width: 124px;
+    }
+
+    .lurraIsGaia {
+        top: 1624px;
+        gap: 6xBase;
+        padding-top: 48px;
+        padding-right: 24px;
+        padding-bottom: 48px;
+        padding-left: 24px;
+    }
+
+    .lurraIsGaia .container {
+        width: 345px;
+        height: 354.5333251953125px;
+        gap: 12.8px;
+        align-self: center;
+    }
+
+    .lurraIsGaia .container .container-text {
+        width: 345px;
+        height: 354.5333251953125px;
+        gap: 25.6px;
+
+    }
+
+
+
+    .how-it-works .card-body {
+        width: 100%;
+        height: 70.00610351562px;
+        padding: 0;
+    }
+
+    .how-it-works .card-body .content {
+        width: 335.3999938964844px;
+        height: 45px;
+        gap: 8px;
+
+    }
+
+    .how-it-works .card-body .content2 {
+        width: 335.3999938964844px;
+        height: 74.86666870117188px;
+        gap: 8px;
+        padding-top: 2.67px;
+        padding-bottom: 2.67px;
+    }
+
+    .how-it-works .card-body .content3 {
+        width: 361px;
+        height: 101px;
+        /* 
+        gap: 16px; */
+        padding: 16px;
+    }
+
+    .how-it-works .card-body .content3 h3 {
+        width: 329px;
+        height: 21px;
+    }
+
+
+
+}
+
+@media(max-width: 440px) {
+    .hero-text .hero-text2 {
+        width: 380px;
+    }
+
+    .hero-text .hero-text2,
+    .hero-text .hero-text2 span {
+        font-size: 48px;
+        letter-spacing: 0.1px;
+    }
+
+    .hero-text .hero-text2 span {
+        line-height: 2em;
+    }
+
+    .hero .hero-text p {
+        line-height: 1.2em;
+    }
+
+    .hero-text button {
+        width: 180px;
+        height: 56px;
+        gap: 2px;
+        padding-top: 3px;
+        padding-right: 5px;
+        padding-bottom: 3px;
+        padding-left: 5px;
+        border-width: 1.39px;
+
+    }
+
+    .hero-text .btn {
+        margin-top: 204px;
+    }
+
+    .hero-text {
+        margin-left: 24px;
+    }
+
+
+}
+
+@media(max-width: 398px) {
+    .how-it-works h2 {
+        font-size: 32px;
+    }
+}

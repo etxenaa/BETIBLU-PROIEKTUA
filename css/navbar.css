@@ -1,0 +1,287 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.logo {
+    width: 157.5px;
+    height: 39.97px;
+    align-content: center;
+}
+
+.logo svg {
+    width: 149.7469482421875px;
+    height: 21.276836395263672px;
+    left: 3.88px;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.nav-links .frame-group {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links .btnNav {
+    display: block;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--Neutral-neutral-0, #FFFFFF);
+
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--Betiblu-Primary, #84FCF3);
+
+}
+
+.nav-links a:active {
+    color: var(--Neutral-neutral-70, #6E7584);
+
+}
+
+.nav-links hr {
+    display: none;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 24px;
+    background: var(--Neutral-neutral-100, #02050E);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    z-index: 1000;
+}
+
+.frame-group {
+    display: block;
+}
+
+.nav-links {
+    visibility: visible;
+}
+
+/* Estilos generales del UL */
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin-left: auto;
+}
+
+.frame-group {
+    display: flex;
+    gap: 24px;
+}
+
+.frame1 {
+    margin: 0 16px;
+}
+
+.frame-group2 {
+    display: flex;
+    gap: 8pxF;
+}
+
+.cast {
+    padding: 0 16px;
+    margin: 0 16px;
+}
+
+
+#navbar.show {
+    visibility: visible;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+}
+
+.cast {
+    padding: 0 16px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--Neutral-neutral-0, #FFF);
+    font-family: Rubik;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    /* 155.556% */
+}
+
+nav ul .btnNav button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--neutral-neutral-30, #C9D0DE);
+    background: var(--white, #FFF);
+}
+
+nav ul .btnNav button a {
+    color: var(--neutral-neutral-80, #595F6D);
+    font-family: Rubik;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    padding: var(--35, 14px) var(--6, 24px);
+}
+
+
+nav ul .btnNav button a:hover {
+    color: var(--Betiblu-Primary-80, #248B83);
+
+}
+
+nav ul .btnNav button a:active {
+    color: var(--Betiblu-Primary-100, #0C4743);
+
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 7px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 30px;
+    height: 2px;
+
+
+    background: white;
+}
+
+.hamburger svg {
+    display: none;
+}
+
+@media (max-width: 1360px) {
+    header {
+        width: 100%;
+        left: 24px;
+        justify-content: space-between;
+        padding-top: 48px;
+        padding-bottom: 48px;
+        padding: 50px;
+    }
+
+    .nav-links {
+        visibility: hidden;
+        position: absolute;
+        width: 100%;
+        background: var(--Neutral-neutral-100, #02050E);
+        align-items: start;
+        gap: 24px;
+        height: 100vh;
+        top: 100px;
+        left: 0;
+        padding: 20px;
+
+    }
+
+
+    .frame-group,
+    .frame-group2,
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links li {
+        padding: 10px 0;
+
+    }
+
+    .nav-links li a {
+        font-family: Rubik;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 32px;
+        letter-spacing: 0%;
+
+    }
+
+    .nav-links hr {
+        display: block;
+    }
+
+
+    .btnNav {
+        visibility: visible;
+        position: absolute;
+        right: 100px;
+        top: -84px;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    #menu-toggle:checked+.hamburger+.nav-links {
+        display: flex;
+    }
+
+
+    .hamburger svg {
+        width: 29px;
+        height: 29px;
+    }
+}
+
+@media (max-width:570px) {
+
+    .e,
+    .t,
+    .i,
+    .b,
+    .l,
+    .u {
+        display: none;
+    }
+
+    nav ul .btnNav {
+        right: 90px;
+    }
+
+    nav ul .btnNav button {
+        width: 157px;
+        height: 50px;
+        font-size: 10px;
+    }
+
+    nav ul .btnNav button a {
+        font-size: 12px;
+    }
+
+    .logo svg {
+        height: 100%;
+    }
+
+    .logo path {
+        transform: scale(1.5) translate(0px, -20px);
+    }
+}

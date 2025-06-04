@@ -1,0 +1,442 @@
+.harremana h1 {
+    width: 100%;
+    color: var(--Neutral-neutral-40, #B1B8C8);
+    font-family: "EB Garamond";
+    font-size: 68px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 78px;
+    letter-spacing: -1.36px;
+    color: var(--Neutral-neutral-40, #B1B8C8);
+    font-family: "EB Garamond";
+    font-size: 68px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 78px;
+    letter-spacing: -1.36px;
+
+
+}
+
+
+.harremana {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 31px;
+    padding: var(--12xBase, 96px) 0px;
+    width: 100%;
+    max-width: 1920px;
+    box-sizing: border-box;
+}
+
+.harremana .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.harremana .container .container-datuak,
+.harremana .container .container-forma {
+    background-color: #232325;
+    text-align: center;
+    padding: 24px;
+    box-sizing: content-box;
+    margin: 10px;
+}
+
+.harremana .container .container-datuak {
+    width: 100%;
+    max-width: 355px;
+    height: 443px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+    gap: 24px;
+
+
+    background: #1C1F27;
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+
+}
+
+.harremana .container .container-forma {
+    width: 100%;
+    max-width: 640px;
+    height: 443px;
+    background: #1C1F27;
+}
+
+.harremana .avatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.harremana .avatar img {
+    width: 124px;
+    height: 124px;
+    border-radius: 100%;
+    object-fit: cover;
+    object-position: center 1px;
+}
+
+
+.harremana .avatar p {
+    font-size: 20px;
+    font-family: Rubik;
+    color: white;
+    margin: 0;
+}
+
+.harremana .datuak {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 24px;
+
+    margin: 0 auto;
+    width: 355px;
+    height: 120px;
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+
+}
+
+.harremana .helbidea {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    flex-wrap: wrap;
+    padding: 0px;
+    gap: 8px;
+
+    width: 355px;
+    height: 48px;
+
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+
+}
+
+.harremana p {
+    width: 355;
+    height: 48;
+    font-family: Rubik;
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: start;
+}
+
+.harremana .kontaktua {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 0px;
+
+    width: 355px;
+    height: 48px;
+
+}
+
+.formularioa {
+    display: flex;
+    flex-direction: column;
+    gap: 24px 16px;
+
+    width: 646px;
+    height: 443px;
+
+
+}
+
+.formularioa div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.formularioa div label {
+    font-family: Rubik;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: rgb(255, 255, 255);
+
+}
+
+.formularioa input,
+.formularioa select,
+.formularioa textarea {
+    background: var(--Neutral-neutral-70, #6E7584);
+    border: 1px solid var(--Neutral-neutral-70, #6E7584);
+}
+
+.formularioa input::placeholder,
+.formularioa select,
+.formularioa textarea::placeholder,
+.formularioa input,
+.formularioa textarea {
+    font-family: Rubik;
+    font-weight: 300;
+    font-size: 14px;
+    color: var(--Neutral-neutral-0, #FFFFFF);
+    text-indent: 15px;
+}
+
+.formularioa input:focus,
+.formulario select:focus,
+.formularioa textarea:focus {
+    border: 2px solid var(--Betiblu-Primary-80, #248B83);
+    outline: none;
+}
+
+
+
+#name div {
+    width: 500px;
+    gap: 2․5px;
+
+}
+
+#email div {
+    display: flex;
+
+    width: 494px;
+
+}
+
+#gaiak div {
+
+    width: 296px;
+}
+
+#name div input,
+#email div input,
+#gaiak div select {
+    height: 37px;
+}
+
+.erroreMezua {
+    display: flex;
+    flex-direction: column;
+}
+
+#gaiak,
+#email,
+#name {
+    display: flex;
+    justify-content: space-between;
+}
+
+#name label,
+#email label,
+#gaiak label {
+    align-self: center;
+}
+
+#name div input,
+#name div p,
+#email div input,
+#email div p,
+#gaiak div select,
+#gaiak div p {
+    align-self: end;
+    width: 100%;
+}
+
+.erroreMezua p {
+    color: red;
+    display: none;
+}
+
+#gaiak select {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 10px;
+    gap: 8px;
+
+}
+
+#mezua {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+
+    height: 188px;
+}
+
+#mezua textarea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px;
+
+    width: 636px;
+    height: 188px;
+    padding-top: 15px;
+}
+
+.formularioa button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 12px;
+    width: 197px;
+    height: 48px;
+    background: #FFFFFF;
+    border: 1px solid #6E7584;
+    color: #6f7585;
+    font-size: 17px;
+    font-family: Rubik;
+    letter-spacing: 0.3mm;
+    cursor: pointer;
+}
+
+.formularioa button p {
+    font-weight: lighter;
+    color: var(--neutral-neutral-80, #595F6D);
+}
+
+.formularioa button p:hover {
+    color: var(--Betiblu-Primary-80, #248B83);
+
+}
+
+.formularioa button p:active {
+    color: var(--Betiblu-Primary-100, #0C4743);
+
+}
+
+
+
+@media(max-width: 1147px) {
+    .harremana .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* Centra horizontalmente los hijos */
+        justify-content: center;
+        /* Centra verticalmente si el contenedor tiene altura */
+    }
+
+    .harremana .container .container-datuak {
+        width: 400px;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 24px;
+        gap: 48px;
+        background: #1C1F27;
+
+        /* Asegura que no se estire */
+        align-self: center;
+    }
+
+    .harremana .datuak {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 350px;
+        height: 48px;
+        gap: 16px;
+    }
+
+
+    .harremana .helbidea {
+        width: 153px;
+        height: 48px;
+        gap: 8px;
+    }
+
+    .harremana .kontaktua {
+        width: 133px;
+        height: 48px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .harremana .container {
+        width: 95%;
+        gap: 16px;
+
+    }
+
+    .harremana .container .container-forma {
+        width: 80%;
+        min-height: 550px;
+        gap: 8px;
+        padding: 24px;
+
+    }
+
+    .harremana .container .container-datuak {
+        width: 80%;
+    }
+
+    .harremana .container .container-datuak .datuak {
+        width: 100%;
+    }
+
+    .harremana .container .container-datuak .datuak .kontaktua p,
+    .harremana .container .container-datuak .datuak .helbidea p {
+        font-size: 16px;
+    }
+
+    .harremana .container .container-datuak,
+    .harremana .container .container-forma .formularioa div {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .formularioa {
+        width: 100%;
+    }
+
+
+
+    .formularioa div label,
+    .formularioa div input,
+    .formularioa div select {
+        align-self: start;
+    }
+
+    #name div,
+    #email div,
+    #gaiak div,
+    #mezua textarea {
+        width: 100%;
+    }
+}
+
+@media (max-width:440px) {
+    .harremana .titulua {
+        padding: 0px 24px;
+
+    }
+}

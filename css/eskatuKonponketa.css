@@ -1,0 +1,644 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--Neutral-neutral-100, #20242D);
+    color: white;
+}
+
+.formularioaKonponketa {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 48px 88px;
+    gap: 24px;
+
+    position: absolute;
+    width: 829px;
+    height: 838px;
+    left: 118px;
+    top: 100px;
+
+    background: #0E131B;
+
+}
+
+.formularioaKonponketa .titulua {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+
+    width: 304px;
+    height: 56px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+.formularioaKonponketa .titulua h1:nth-child(1) {
+    width: 211px;
+    height: 56px;
+
+    font-family: 'EB Garamond';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.02em;
+
+    color: #9AA1B1;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+.formularioaKonponketa .titulua h1:nth-child(2) {
+    width: 69px;
+    height: 56px;
+
+    font-family: 'EB Garamond';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.02em;
+
+    color: #9AA1B1;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+}
+
+.formularioaKonponketa form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 19px;
+
+    width: 653px;
+    height: 662px;
+
+}
+
+.formularioaKonponketa form .galderak {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+
+    width: 653px;
+    height: 595px;
+
+}
+
+.formularioaKonponketa form .botoiak {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 19px;
+
+    width: 653px;
+    height: 48px;
+
+}
+
+#produktuMota,
+#marka {
+
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 16px;
+    width: 653px;
+    height: 40px;
+
+    background: #6E7584;
+    border: 1px solid #E2E8F5;
+    border-radius: 0px;
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #F3F6FD;
+
+
+}
+
+form .galderak textarea:focus,
+form .galderak select:focus {
+    border: 2px solid var(--Betiblu-Primary-80, #248B83);
+    outline: none;
+}
+
+
+form .galderak .marka,
+form .galderak .mota {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 12px;
+}
+
+#produktuMota option,
+#marka option {
+    width: 591px;
+    height: 24px;
+}
+
+.aukera {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+
+    width: 653px;
+    height: 72px;
+
+}
+
+.aukera label:nth-child(1),
+.aukera label:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 0px;
+
+    width: 326.5px;
+    height: 72px;
+
+}
+
+.aukera label:nth-child(1) button {
+
+    width: 326.5px;
+    height: 64px;
+
+    background: #2B303A;
+    border: 1px solid #2B303A;
+    border-radius: 4px 0px 0px 4px;
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    color: #FFFFFF;
+
+}
+
+.aukera label:nth-child(2) button {
+    width: 326.5px;
+    height: 64px;
+
+    background: #6E7584;
+    border: 1px solid #6E7584;
+    border-radius: 0px 4px 4px 0px;
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    color: #FFFFFF;
+
+}
+
+.textarea {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    gap: 12px;
+
+    width: 653px;
+    height: 159px;
+
+
+}
+
+.textarea label {
+
+    width: 653px;
+    height: 16px;
+
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+
+    color: #AAAAAA;
+
+}
+
+.textarea textarea {
+    padding: 12px 16px;
+    gap: 10px;
+
+    width: 653px;
+    height: 131px;
+
+    background: #6E7584;
+    color: #FFFFFF;
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.textarea textarea::placeholder {
+    width: 610px;
+    height: 24px;
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #FFFFFF;
+}
+
+.fitxategia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+
+    width: 653px;
+    height: 188px;
+
+    background: #6E7584;
+    border-radius: 6px;
+
+}
+
+.fitxategia .edukia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+
+    width: 243px;
+    height: 160px;
+
+}
+
+.fitxategia .textua {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+
+    width: 243px;
+    height: 104px;
+
+}
+
+.fitxategia .textua .ilustrazioa {
+    width: 48px;
+    height: 48px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.fitxategia .textua .ilustrazioa svg {
+    left: 18.75%;
+    right: 18.75%;
+    top: 18.75%;
+    bottom: 18.75%;
+    color: #FFFFFF;
+}
+
+.fitxategia .edukia #fileName {
+    display: none;
+}
+
+.fitxategia .edukia .textua .textua2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+
+    width: 243px;
+    height: 48px;
+
+}
+
+.fitxategia .edukia .textua .textua2 p:nth-child(1) {
+    width: 243px;
+    height: 24px;
+
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #E2E8F5;
+}
+
+.fitxategia .edukia .textua .textua2 p:nth-child(2) {
+    width: 175px;
+    height: 16px;
+
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    color: #E2E8F5;
+}
+
+.fitxategia .edukia button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 8px;
+
+    width: 161px;
+    height: 40px;
+
+    background: #2B3139;
+    border: 1px solid #2B3139;
+
+}
+
+.fitxategia .edukia button p {
+    width: 89px;
+    height: 22px;
+
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #FFFFFF;
+
+}
+
+.botoiak {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 19px;
+
+    width: 653px;
+    height: 48px;
+
+}
+
+.botoiak button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 12px;
+    gap: 8px;
+
+    width: 317px;
+    height: 48px;
+    text-align: center;
+    line-height: 24px;
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.botoiak button:nth-child(1) {
+
+    border: 1px solid #2B303A;
+    background: var(--Neutral-neutral-75, #2B303A);
+
+    color: #FFFFFF;
+
+}
+
+.botoiak button:nth-child(1):hover {
+    background: var(--Neutral-neutral-100, #02050E);
+    border: var(--Neutral-neutral-100, #02050E);
+}
+
+.botoiak button:nth-child(1):active {
+    background: var(--Neutral-neutral-70, #6E7584);
+    border: var(--Neutral-neutral-70, #6E7584);
+}
+
+.botoiak button:nth-child(2) {
+    background: var(--Betiblu-Primary, #84FCF3);
+
+
+    border: var(--Betiblu-Primary, #84FCF3);
+    font-family: IBM Plex Mono;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0%;
+    color: var(--Neutral-neutral-100, #02050E);
+
+}
+
+.botoiak button:nth-child(2):hover {
+    background: var(--Betiblu-Primary-80, #248B83);
+    border: var(--Betiblu-Primary-80, #248B83);
+
+    color: white;
+}
+
+@media (max-width: 1075px) {
+    .formularioaKonponketa {
+        padding: 48px;
+        gap: 24px;
+
+        position: absolute;
+        width: 720px;
+        height: 838px;
+        left: 24px;
+        top: 105px;
+
+        background: #0E131B;
+
+    }
+
+    #produktuMota,
+    #marka {
+        width: 624px;
+        height: 40px;
+        gap: 2px;
+
+    }
+
+    .aukera {
+        width: 624px;
+        height: 72px;
+
+    }
+
+    .aukera label:nth-child(1) button,
+    .aukera label:nth-child(2) button {
+        width: 312px;
+        height: 64px;
+        gap: 8px;
+
+    }
+
+    .textarea,
+    .textarea label,
+    .textarea textarea {
+        width: 624px;
+    }
+
+    .textarea textarea::placeholder {
+        width: 582px;
+    }
+
+    .fitxategia {
+        width: 624px;
+        height: 188px;
+        gap: 2․5px;
+        border-radius: 6px;
+
+    }
+
+    .botoiak {
+        width: 624px;
+        height: 48px;
+        gap: 19px;
+
+    }
+
+    .botoiak button {
+        width: 302.5px;
+        height: 48px;
+    }
+}
+
+@media(max-width: 745px) {
+    .formularioaKonponketa {
+        width: 362px;
+        height: 790px;
+        top: 120px;
+        gap: 24px;
+        padding: 24px;
+        left: 10px;
+    }
+
+    .formularioaKonponketa .titulua h1:nth-child(1) {
+        width: 141px;
+        height: 36px;
+
+        font-family: 'EB Garamond';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 36px;
+        display: flex;
+        align-items: center;
+        letter-spacing: -0.02em;
+
+    }
+
+    .formularioaKonponketa .titulua h1:nth-child(2) {
+        width: 46px;
+        height: 36px;
+
+        font-family: 'EB Garamond';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 36px;
+        display: flex;
+        align-items: center;
+        letter-spacing: -0.02em;
+    }
+
+    #produktuMota,
+    #marka {
+        width: 314px;
+
+    }
+
+    .aukera {
+        width: 314px;
+        height: 72px;
+
+    }
+
+    .aukera label:nth-child(1) button,
+    .aukera label:nth-child(2) button {
+        width: 157px;
+
+    }
+
+    .textarea,
+    .textarea label,
+    .textarea textarea {
+        width: 314px;
+    }
+
+    .textarea textarea::placeholder {
+        width: 280px;
+    }
+
+    .fitxategia {
+        width: 314px;
+
+    }
+
+    .botoiak {
+        width: 314px;
+
+    }
+
+    .botoiak button {
+        width: 149px;
+
+    }
+}

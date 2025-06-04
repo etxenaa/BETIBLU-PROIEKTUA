@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konpondu 1/2</title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/eskatuKonponketa.css">
+    <link rel="stylesheet" href="css/cookie.css">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700&family=Rubik:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <script src="js/navbar.js"></script>
+    <section class="formularioaKonponketa">
+        <div class="titulua">
+            <h1>Reparado</h1>
+            <h1>1/2</h1>
+        </div>
+        <form action="/submit" method="get" enctype="multipart/form-data">
+            <div class="galderak">
+                <div class="mota">
+                    <select id="produktuMota" name="produktuMota">
+                        <option selected disabled value="">Tipo de producto</option>            
+                        <option value="Sudadera deportiva">Sudadera deportiva</option>
+                        <option value="Falda/Pantalones cortos">Falda/Pantalones cortos</option>
+                        <option value="Traje">Traje</option>
+                        <option value="Vestidos/Pichis">Vestidos/Pichis</option>
+                        <option value="Abrigos/Chaquetas">Abrigos/Chaquetas</option>
+                        <option value="Prendas de punto/Jerséis">Prendas de punto/Jerséis</option>
+                        <option value="Pantalones/Vaqueros">Pantalones/Vaqueros</option>
+                        <option value="Topak/Kamisetak">Tops/Camisetas</option>
+                        <option value="Camisas">Camisas</option>
+                    </select>
+                    <span style="color: red; display: none;">Seleccione un tipo</span>
+                </div>
+
+                <div class="marka">
+                    <select id="marka" name="marka">
+                        <option selected disabled value="">Marca (opcional)</option>
+                        <option value="Adolfo Domínguez">Adolfo Domínguez</option>
+                        <option value="Bershka">Bershka</option>
+                        <option value="Capitán Denim">Capitán Denim</option>
+                        <option value="Carhartt">Carhartt</option>
+                        <option value="Cimalp">Cimalp</option>
+                        <option value="Cortefiel">Cortefiel</option>
+                        <option value="DENHAM">DENHAM</option>
+                        <option value="Desigual">Desigual</option>
+                        <option value="Diesel">Diesel</option>
+                        <option value="Dr. Denim">Dr. Denim</option>
+                        <option value="Fabienne Chapot">Fabienne Chapot</option>
+                        <option value="Floria Collective">Floria Collective</option>
+                        <option value="G-Star RAW">G-Star RAW</option>
+                        <option value="IAIOS">IAIOS</option>
+                        <option value="Kings of Indigo">Kings of Indigo</option>
+                        <option value="La Casita de Wendy">La Casita de Wendy</option>
+                        <option value="Levi's">Levi's</option>
+                        <option value="Loewe">Loewe</option>
+                        <option value="Mango">Mango</option>
+                        <option value="Massimo Dutti">Massimo Dutti</option>
+                        <option value="Oysho">Oysho</option>
+                        <option value="Pull&Bear">Pull&Bear</option>
+                        <option value="Purificación García">Purificación García</option>
+                        <option value="Roberto Verino">Roberto Verino</option>
+                        <option value="Roca Mood">Roca Mood</option>
+                        <option value="Sfera">Sfera</option>
+                        <option value="SKFK">SKFK</option>
+                        <option value="Stradivarius">Stradivarius</option>
+                        <option value="Ternua">Ternua</option>
+                        <option value="Unfeigned">Unfeigned</option>
+                        <option value="Wrangler">Wrangler</option>
+                        <option value="Zara">Zara</option>
+                        <option value="">Bat ere ez</option>
+                    </select>
+                </div>
+
+
+                <div class="aukera">
+                    <label for="konpondu">
+                        <button type="button" id="konpondu" name="konpondu" value="konpondu">Reparar</button>
+                    </label>
+                    <label for="egokitu">
+                        <button type="button" id="egokitu" name="egokitu" value="egokitu">Ajustar</button>
+                    </label>
+                </div>
+
+
+                <div class="textarea">
+                    <label for="mensaje">Tu mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" cols="50" placeholder="Tu mensaje..."></textarea>
+                    <span for="mensaje" style="color: red; display: none;">Escribe al menos 15 caracteres</span>
+                </div>
+
+                <div class="fitxategia">
+                    <div id="edukia" class="edukia">
+                        <p id="fileName"></p>
+                        <div id="textua" class="textua">
+                            <div class="ilustrazioa">
+                                <svg width="31" height="30" viewBox="0 0 31 30" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M14 22.577V5.777L9.0695 10.7075L6.9615 8.5385L15.5 0L24.0385 8.5385L21.9305 10.7075L17 5.777V22.577H14ZM4.1155 30C3.10517 30 2.25 29.65 1.55 28.95C0.85 28.25 0.5 27.3948 0.5 26.3845V20.9615H3.5V26.3845C3.5 26.5385 3.56417 26.6795 3.6925 26.8075C3.8205 26.9358 3.9615 27 4.1155 27H26.8845C27.0385 27 27.1795 26.9358 27.3075 26.8075C27.4358 26.6795 27.5 26.5385 27.5 26.3845V20.9615H30.5V26.3845C30.5 27.3948 30.15 28.25 29.45 28.95C28.75 29.65 27.8948 30 26.8845 30H4.1155Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+                            <div class="textua2">
+                                <p style="text-wrap: nowrap;"">Sube una imagen si lo desea</p>
+                                <p style="text-wrap: nowrap;">El tamaño máximo es 10 MB</p>
+                            </div>
+                        </div>
+                        <button id="argazkiaIgo">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.6908 17.5668L10.2716 11.1475C9.77322 11.5785 9.19489 11.9123 8.53656 12.149C7.87806 12.3855 7.19656 12.5038 6.49206 12.5038C4.79039 12.5038 3.35023 11.9148 2.17156 10.7368C0.993058 9.55876 0.403809 8.12676 0.403809 6.44076C0.403809 4.7546 0.992808 3.32201 2.17081 2.14301C3.34881 0.964012 4.78206 0.374512 6.47056 0.374512C8.15906 0.374512 9.59264 0.963595 10.7713 2.14176C11.9501 3.3201 12.5396 4.7526 12.5396 6.43926C12.5396 7.14426 12.4196 7.82626 12.1798 8.48526C11.9401 9.14426 11.6024 9.73335 11.1666 10.2525L17.5958 16.655L16.6908 17.5668ZM6.48181 11.2475C7.82198 11.2475 8.95723 10.7812 9.88756 9.84851C10.8179 8.91568 11.2831 7.77918 11.2831 6.43901C11.2831 5.09885 10.8179 3.96243 9.88756 3.02976C8.95723 2.0971 7.82198 1.63076 6.48181 1.63076C5.13598 1.63076 3.99589 2.0971 3.06156 3.02976C2.12723 3.96243 1.66006 5.09885 1.66006 6.43901C1.66006 7.77918 2.12723 8.91568 3.06156 9.84851C3.99589 10.7812 5.13598 11.2475 6.48181 11.2475Z"
+                                    fill="white" />
+                            </svg>
+                            <p style="text-wrap: nowrap;">Subir imagen</p>
+                        </button>
+                        <input type="file" id="fileInput" accept="image/*" style="display: none">
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div class="botoiak">
+                <button type="button" id="Ezeztatu">
+                    <p>Rechazar</p>
+                </button>
+                <button type="button" id="Jarraitu">
+                    <p>Continuar</p>
+                </button>
+            </div>
+        </form>
+    </section>
+
+    <script src="js/index.js"></script>
+    <script src="js/eskatuKonponketa.js"></script>
+    <script src="js/cookie.js"></script>
+</body>
+
+
+</html>
